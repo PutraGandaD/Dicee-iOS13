@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // From now on, i posted every new changes to GitHub!
+        
         // diceImageViewOne
         diceImageViewOne.image = #imageLiteral(resourceName: "DiceSix") //use #imageLiteral(
         diceImageViewOne.alpha = 0.5 // to make a customization of alpha's picture
