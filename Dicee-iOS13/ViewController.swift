@@ -11,6 +11,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // IB = Interface Builder
+    // IBOutlet = changes to app's UI
     @IBOutlet weak var diceImageViewOne: UIImageView!
     
     @IBOutlet weak var diceImageViewTwo: UIImageView!
@@ -29,6 +31,12 @@ class ViewController: UIViewController {
         diceImageViewTwo.alpha = 0.5
     }
 
-
+    //IB Action : respond of user interactions when certain action executed.
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        print("Button got tapped.")
+        diceImageViewOne.image = #imageLiteral(resourceName: "DiceFour")
+        diceImageViewTwo.image = #imageLiteral(resourceName: "DiceFour")
+    }
+    
 }
  
